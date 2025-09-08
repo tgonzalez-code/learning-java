@@ -1,19 +1,16 @@
-import demo.collections.DemoCollections;
-import demo.collections.DemoCollectionsQueue;
-
-import java.util.LinkedList;
-import java.util.Queue;
+import demo.gc.DemoGc;
 
 public class MainApplication {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
         //System.out.println("Hello World!");
 
         //DemoCollectionsQueue demoCollectionsQueue = new DemoCollectionsQueue();
         //demoCollectionsQueue.demoQueue();
 
-        DemoCollections demoCollections = new DemoCollections();
-        demoCollections.demoCollections();
+        //DemoCollections demoCollections = new DemoCollections();
+        //demoCollections.demoCollections();
 
+        new demo.gc.DemoGc().runDemo();
     }
 }
